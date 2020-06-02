@@ -160,7 +160,7 @@ export class QueryEditorRow extends PureComponent<Props, State> {
   };
 
   renderPluginEditor = () => {
-    const { query, onChange } = this.props;
+    const { panel, query, onChange } = this.props;
     const { datasource, data } = this.state;
 
     if (datasource?.components?.QueryCtrl) {
@@ -178,6 +178,7 @@ export class QueryEditorRow extends PureComponent<Props, State> {
           onChange={onChange}
           onRunQuery={this.onRunQuery}
           data={data}
+          panelId={panel.panelId}
         />
       );
     }

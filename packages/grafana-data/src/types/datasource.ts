@@ -310,6 +310,7 @@ export interface QueryEditorProps<
    * Contains query response filtered by refId of QueryResultBase and possible query error
    */
   data?: PanelData;
+  panelId?: number;
   exploreMode?: ExploreMode;
   exploreId?: any;
   history?: HistoryItem[];
