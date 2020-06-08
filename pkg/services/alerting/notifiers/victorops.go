@@ -43,9 +43,10 @@ func init() {
 			{
 				Label:       "Url",
 				Element:     "input",
-				ElementType: "text",
+				InputType:   "text",
 				Placeholder: "VictorOps url",
 				ModelValue:  "url",
+				Required:    true,
 			},
 			{
 				Label:       "Auto resolve incidents",
